@@ -1,0 +1,116 @@
+{% extends "portfolio/extender.html" %}
+
+{% block content %}
+
+<div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+        <h1 class="header center brown-text text-darken-4" style="font-family: 'Montserrat'; font-weight: 100;">Travel Itineraries</h1>
+        <!-- <div class="row center">
+            <h5 class="header col s12 white-text text-lighten-2 light" style="font-family: 'Montserrat'; font-weight: 100;">Full Stack Developer and Copywriter</h5>
+        </div> -->
+
+        </div>
+    </div>
+    <div class="parallax"><img src="/static/portfolio/images/travel.jpeg" alt="Unsplashed background img 1"></div>
+</div>
+
+
+<div class="container">
+    <div class="section">
+    
+        <!--   Icon Section   -->
+        <div class="row">
+        <div class="col s12 m8">
+        
+    
+            <h5 class="center" style="color: #003366; font-family: 'Montserrat'; font-weight: 100;">Overview</h5>
+
+            <p class="light">Travel Itineraries can be described as a “Pinterest for travel guides.” Users can register for an account, and create itineraries that document their own travels, with guides and tips for future travelers.</p>
+
+            <p class="light">Users can also search the database by location for itineraries shared by other users. They can view these itineraries for inspiration for future destinations, or save them to “My Saved Itineraries” to keep on file while planning their next trip.</p>
+       
+        </div>
+
+
+        <div class="col s12 m4">
+  
+            <h5 class="center" style="color: #003366; font-family: 'Montserrat'; font-weight: 100;">Language</h5>
+
+            <p class="light center" style="margin-top: -3px; margin-bottom: -5px;">Python</p>
+
+            <h5 class="center" style="color: #003366; font-family: 'Montserrat'; font-weight: 100;">Technologies</h5>
+
+            <p class="light center" style="margin-top: -3px; margin-bottom: -5px;">Django</p>
+            <p class="light center" style="margin-top: -3px; margin-bottom: -5px;">SQLite</p>
+            <p class="light center" style="margin-top: -3px; margin-bottom: -5px;">Bootstrap</p>
+            <p class="light center" style="margin-top: -3px; margin-bottom: -5px;">jQuery</p>
+            <p class="light center" style="margin-top: -3px; margin-bottom: -5px;">AJAX</p>
+           
+        </div>
+        </div>
+    
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+        <div class="col l6 s12">
+        
+            <div class="slider">
+            <ul class="slides">
+                <li>
+                <img src="/static/portfolio/images/alesund.jpg"> <!-- random image -->
+                </li>
+                <li>
+                <img src="/static/portfolio/images/norway.jpg"> <!-- random image -->
+                </li>
+                <li>
+                <img src="/static/portfolio/images/bamboo1.jpg"> <!-- random image -->
+                </li>
+
+            </ul>
+        </div>
+        </div>
+       
+
+    <div class="col s12 l6">
+            <p class="light">My inspiration for creating this web application was my own penchant for travel. I am a planner, so I’ll be researching destinations months in advance to create a travel itinerary for my trip.</p>
+
+            <p class="light">The only hangup I had was that my research was spread across so many different websites, from travel sites like TripAdvisor, to tons of personal travel blogs.</p>
+                    
+            <p class="light">I wanted to create a site where all tips, itineraries and travel guides could be stored and searched for in one place, so that travel planning could be simpler and more enjoyable!</p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+        <h4 class="center" style="color: #003366; font-family: 'Montserrat'; font-weight: 100; margin-top: 20px; margin-bottom: 20px;">Watch Video</h4>
+
+        <div class="video-container">
+            <iframe width="853" height="480" src="//www.youtube.com/embed/4AgsxbMP6M0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="center" style="margin: 20px;">
+            <a class="waves-effect waves-light btn-large" href="//18.222.175.94/">Go to Project</a>
+            <a class="waves-effect waves-light btn-large" href="//github.com/estarlight/travel_app">GitHub Code</a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/static/portfolio/js/materialize.js"></script>
+    <script src="/static/portfolio/js/init.js"></script>
+    <script>
+            $(document).ready(function(){
+          $('.slider').slider();
+        });
+    </script>
+
+{% endblock %}
+
