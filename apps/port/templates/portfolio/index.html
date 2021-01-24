@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="static/portfolio/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="static/portfolio/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:light,400,500,800" rel="stylesheet">
-
-</head>
 <body>
 
 {% extends "portfolio/extender.html" %}
+{% load static %}
 
 
 
@@ -25,7 +13,7 @@
       <div class="container">
         <h1 class="header center white-text text-lighten-2" style="font-family: 'Montserrat'; font-weight: 100;">Esther Lee</h1>
         <div class="row center">
-          <h5 class="header col s12 white-text text-lighten-2 light" style="font-family: 'Montserrat'; font-weight: 100;">Full Stack Developer and Copywriter</h5>
+          <h5 class="header col s12 white-text text-lighten-2 light" style="font-family: 'Montserrat'; font-weight: 100;">Software Engineer and Copywriter</h5>
         </div>
         <!-- <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
@@ -34,7 +22,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="static/portfolio/images/nightsky.jpeg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="{% static "portfolio/images/nightsky.jpeg" %}" alt="background img 1"></div>
   </div>
 
 
@@ -45,20 +33,22 @@
       <div class="row">
         <div class="col s12 l5" style="margin-top: 80px;">
           <div class="icon-block">
-            <img class="responsive-img" src="static/portfolio/images/esther_cropped.jpg">
+            <img class="responsive-img" src="{% static "portfolio/images/esther_cropped.jpg" %}">
           </div>
         </div>
 
         <div class="col s12 l7" style="margin-top: 10px;">
           <div class="icon-block">
             <h5 class="center" style="font-family: 'Montserrat'; font-weight: 100;">Hi There, I'm Esther!</h5>
-            <h6 class="center grey-text" style="font-family: 'Montserrat'; font-weight: 100;">A little bit about me...</h6>
+            <!-- <h6 class="center grey-text" style="font-family: 'Montserrat'; font-weight: 100;">A little bit about me...</h6> -->
 
-            <p class="light">I’m a full stack developer with experience working in Python, Java, and JavaScript.</p>
+            <p class="light">I’m a full stack software engineer working mostly on the front-end, but with enough back-end experience to be dangerous. Well…maybe not dangerous, but enough to make things work, at least.</p>
 
-            <p class="light">I have previously worked in marketing for a real estate SaaS company for 4.5 years, which has allowed me to expand both my creative and analytical skills on the job. My coding ability combined with my background in creative communications makes me a strong problem-solver and communicator, and a better equipped, more well-rounded programmer.</p>
+            <p class="light">Prior to starting my career as a developer, I worked in marketing for a real estate SaaS company as a copywriter. While I am plenty analytical, I like to think that my marketing and copywriting experience helps me approach programming problems from a more creative perspective.</p>
                 
-            <p class="light">I am looking to contribute my current skill set as well as develop new ones at an innovative company that aims to make people’s lives easier through technology.</p>
+            <p class="light">I am currently working full-time as a software engineer in healthcare, but I also sometimes write about engineering as a freelance copywriter for GitHub.</p>
+
+            <p class="light">Feel free to check out my work or drop me a line!</p>
           </div>
         </div>
       </div>
@@ -84,13 +74,13 @@
           
                   <tbody>
                     <tr>
+                      <td>JavaScript</td>
+                    </tr>
+                    <tr>
                       <td>Python</td>
                     </tr>
                     <tr>
                       <td>Java</td>
-                    </tr>
-                    <tr>
-                      <td>JavaScript</td>
                     </tr>
                   </tbody>
                 </table>
@@ -103,33 +93,30 @@
             <div class="icon-block">
               <h2 class="center indigo-text text-darken-4"><i class="material-icons">web</i></h2>
               <table class="centered">
-                  <thead>
-                    <tr>
-                        <th>Front End</th>
-                    </tr>
-                  </thead>
-          
-                  <tbody>
-                    <tr>
-                      <td>HTML5</td>
-                    </tr>
-                    <tr>
-                      <td>CSS3</td>
-                    </tr>
-                    <tr>
-                      <td>jQuery</td>
-                    </tr>
-                    <tr>
-                      <td>AJAX</td>
-                    </tr>
-                    <tr>
-                      <td>Bootstrap</td>
-                    </tr>
-                    <tr>
-                      <td>Materialize</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <thead>
+                  <tr>
+                      <th>Frameworks and Libraries</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>React<span style="color: white;">............</span>React Native</td>
+                  </tr>
+                  <tr>
+                    <td>Express<span style="color: white;">..................</span>Node.js</td>
+                  </tr>
+                  <tr>
+                    <td>Django<span style="color: white;">.......................</span>Flask</td>
+                  </tr>
+                  <tr>
+                    <td>Angular 6<span style="color: white;">...........</span>Mongoose</td>
+                  </tr>
+                  <tr>
+                    <td>Spring MVC<span style="color: white;">..........</span>Socket.io</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
   
@@ -137,28 +124,33 @@
             <div class="icon-block">
               <h2 class="center indigo-text text-darken-4"><i class="material-icons">settings</i></h2>
               <table class="centered">
-                  <thead>
-                    <tr>
-                        <th>Frameworks and Libraries</th>
-                    </tr>
-                  </thead>
-          
-                  <tbody>
-                    <tr>
-                      <td>Django<span style="color: white;">..................</span>Node.js</td>
-                    </tr>
-                    <tr>
-                      <td>Flask<span style="color: white;">.................</span>Express.js</td>
-                    </tr>
-                    <tr>
-                      <td>Angular 6<span style="color: white;">...........</span>Mongoose</td>
-                    </tr>
-                    <tr>
-                      <td>Spring MVC<span style="color: white;">..........</span>Socket.io</td>
-                    </tr>
-                  </tbody>
-                </table>
-
+                <thead>
+                  <tr>
+                      <th>Front End</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>HTML5</td>
+                  </tr>
+                  <tr>
+                    <td>CSS3</td>
+                  </tr>
+                  <tr>
+                    <td>jQuery</td>
+                  </tr>
+                  <tr>
+                    <td>AJAX</td>
+                  </tr>
+                  <tr>
+                    <td>Bootstrap</td>
+                  </tr>
+                  <tr>
+                    <td>Materialize</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -183,6 +175,9 @@
                       </tr>
                       <tr>
                         <td>MongoDB</td>
+                      </tr>
+                      <tr>
+                        <td>Google Firebase/Firestore</td>
                       </tr>
                     </tbody>
                   </table>
@@ -252,20 +247,19 @@
     </div>
   </div>
 
+  <!-- Start of Projects Section -->
 
   <div id="projects" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="header col s12 center white-text text-lighten-2" style="font-family: 'Montserrat'; font-weight: 100;">Projects</h1>
+          <h1 class="header col s12 center white-text text-lighten-2" style="font-family: 'Montserrat'; font-weight: 100;">Coding Projects</h1>
           <!-- <h5 class="header col s12 light" style="font-family: 'Montserrat'; font-weight: 100;">A modern responsive front-end framework based on Material Design</h5> -->
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="/static/portfolio/images/green.jpeg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="{% static "portfolio/images/green.jpeg" %}" alt="Projects img 2"></div>
   </div>
-
-
 
   <div class="row" style="margin: 60px;">
 
@@ -273,7 +267,7 @@
     <div class="col s12 l4">
       <div class="card">
         <div class="card-image">
-          <img src="/static/portfolio/images/travel.jpeg">
+          <img src="{% static "portfolio/images/travel.jpeg" %}">
           <span class="card-title text-grey brown darken-1" style="font-family: 'Montserrat'; font-weight: 100; padding-top: 3px; padding-bottom: 3px;">Travel Itineraries</span>
         </div>
         <div class="card-content">
@@ -289,7 +283,7 @@
     <div class="col s12 l4">
       <div class="card">
         <div class="card-image">
-          <img src="/static/portfolio/images/0115.jpg">
+          <img src="{% static "portfolio/images/0115.jpg" %}">
           <span class="card-title blue-text" style="font-family: 'Montserrat'; font-weight: 100; padding-top: 5px;; padding-bottom: 5px;">Skin Deep</span>
         </div>
         <div class="card-content">
@@ -305,7 +299,7 @@
     <div class="col s12 l4">
       <div class="card">
         <div class="card-image">
-          <img src="/static/portfolio/images/handy_helper.jpeg">
+          <img src=" {% static "portfolio/images/handy_helper.jpeg" %}">
           <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Handy Helper</span>
         </div>
         <div class="card-content">
@@ -325,7 +319,7 @@
       <div class="col s12 l4">
           <div class="card">
             <div class="card-image">
-              <img src="/static/portfolio/images/restaurant.jpeg">
+              <img src="{% static "portfolio/images/restaurant.jpeg" %}">
               <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Restaurant Reviewer</span>
             </div>
             <div class="card-content">
@@ -340,7 +334,7 @@
         <div class="col s12 l4">
             <div class="card">
               <div class="card-image">
-                <img src="/static/portfolio/images/classes.jpeg">
+                <img src="{% static "portfolio/images/classes.jpeg" %}">
                 <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Courses Platform</span>
               </div>
               <div class="card-content">
@@ -358,7 +352,7 @@
     <div class="col s12 l4">
         <div class="card">
           <div class="card-image">
-            <img src="/static/portfolio/images/fitness.jpeg">
+            <img src="{% static "portfolio/images/fitness.jpeg" %}">
             <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Just You Fitness</span>
           </div>
           <div class="card-content">
@@ -375,6 +369,128 @@
 
   </div>
 
+  <!-- Start of Writing Section -->
+
+  <div id="projects" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="header col s12 center white-text text-lighten-2" style="font-family: 'Montserrat'; font-weight: 100;">Copywriting</h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static "portfolio/images/typewriter.jpg" %}" alt="Copywriting Work"></div>
+  </div>
+
+  <div class="row" style="margin: 60px;">
+
+   <div class="row">
+    <div class="col s12 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static "portfolio/images/travel.jpeg" %}">
+          <span class="card-title text-grey brown darken-1" style="font-family: 'Montserrat'; font-weight: 100; padding-top: 3px; padding-bottom: 3px;">Travel Itineraries</span>
+        </div>
+        <div class="card-content">
+          <p>A "Pinterest for travel itineraries" that allows users to search, upload, and save their favorite itineraries to plan future international travels.</p>
+        </div>
+        <div class="card-action">
+          <a href="/projects/travel_itineraries">See Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col s12 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static "portfolio/images/0115.jpg" %}">
+          <span class="card-title blue-text" style="font-family: 'Montserrat'; font-weight: 100; padding-top: 5px;; padding-bottom: 5px;">Skin Deep</span>
+        </div>
+        <div class="card-content">
+          <p>A cosmetics review site that allows users to search the database for a brand or product, and filter reviews by specific physical characteristics.</p>
+        </div>
+        <div class="card-action">
+          <a href="/projects/skin_deep">See Details</a>
+        </div>
+      </div>
+    </div>
+
+                  
+    <div class="col s12 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src=" {% static "portfolio/images/handy_helper.jpeg" %}">
+          <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Handy Helper</span>
+        </div>
+        <div class="card-content">
+          <p>An online job board where users can create postings to hire helpers for small tasks, 
+            or to find jobs they want to be hired for.</p>
+        </div>
+        <div class="card-action">
+          <a href="/projects/handy_helper">See Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="row">
+
+      <div class="col s12 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="{% static "portfolio/images/restaurant.jpeg" %}">
+              <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Restaurant Reviewer</span>
+            </div>
+            <div class="card-content">
+              <p>A simple web application that allows users to add, rate, and review restaurants, using a NoSQL database.</p>
+            </div>
+            <div class="card-action">
+              <a href="/projects/restaurant_reviewer">See Details</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col s12 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="{% static "portfolio/images/classes.jpeg" %}">
+                <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Courses Platform</span>
+              </div>
+              <div class="card-content">
+                <p>A site where teachers can create, edit, view, or delete classes, and students can add
+                    classes to their course list.</p>
+              </div>
+              <div class="card-action">
+                <a href="/projects/courses">See Details</a>
+              </div>
+            </div>
+          </div>
+
+
+
+    <div class="col s12 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{% static "portfolio/images/fitness.jpeg" %}">
+            <span class="card-title" style="font-family: 'Montserrat'; font-weight: 100;">Just You Fitness</span>
+          </div>
+          <div class="card-content">
+            <p>A lead-generating business website geared towards educating personal trainers about the Just You Fitness franchise.</p>
+          </div>
+          <div class="card-action">
+            <a href="/projects/justyoufitness">See Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+<!-- Start of Contact Section -->
 
   <div id = "contact" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -385,7 +501,7 @@
         </div>
       </div>
     </div>
-    {% load static %}
+
     <div class="parallax"><img src="{% static "portfolio/images/background3.jpg" %}" alt="Unsplashed background img 3"></div>
   </div>
 

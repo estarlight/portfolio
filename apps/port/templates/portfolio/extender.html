@@ -3,12 +3,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Esther Lee - Portfolio Site</title>
+  {% load static %}
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/static/portfolio/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/static/portfolio/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static "portfolio/css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static "portfolio/css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:light,400,500,800" rel="stylesheet">
 
 </head>
@@ -18,7 +19,8 @@
       <a id="logo-container" href="/" class="brand-logo">Home</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/#about">About</a></li>
-        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#projects">Code Projects</a></li>
+        <li><a href="/#">Writing</a></li>
         <li><a href="/#contact">Contact</a></li>
 
       </ul>
@@ -48,8 +50,8 @@
         <hr>
   
         <ul>
-          <li style="padding-top: 1px; padding-bottom: 1px; display: inline-block; margin: 0 35px 0 35px;"><h6><a class="white-text" href="https://www.linkedin.com/in/esther-lee-0311/"><img src="/static/portfolio/images/linkedin_logo.png" width="25px;" alt="linkedin">    LinkedIn</a></h6></li>
-          <li style="margin-top: 5px; display: inline-block; margin: 0 35px 0 35px;"><h6><a class="white-text" href="https://github.com/estarlight"><img src="/static/portfolio/images/github_logo.png" width="22px;" alt="github">   GitHub</a></h6></li>
+          <li style="padding-top: 1px; padding-bottom: 1px; display: inline-block; margin: 0 35px 0 35px;"><h6><a class="white-text" href="https://www.linkedin.com/in/esther-lee-0311/"><img src="{% static "portfolio/images/linkedin_logo.png" %}" width="25px;" alt="linkedin">    LinkedIn</a></h6></li>
+          <li style="margin-top: 5px; display: inline-block; margin: 0 35px 0 35px;"><h6><a class="white-text" href="https://github.com/estarlight"><img src="{% static "portfolio/images/github_logo.png" %}" width="22px;" alt="github">   GitHub</a></h6></li>
         </ul>
         <br>
         <br>
@@ -62,8 +64,8 @@
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="/static/portfolio/js/materialize.js"></script>
-<script src="/static/portfolio/js/init.js"></script>
+<script src="{% static "portfolio/js/materialize.js" %}"></script>
+<script src="{% static "portfolio/js/init.js" %}"></script>
 
 </body>
 </html>

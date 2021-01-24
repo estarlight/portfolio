@@ -1,6 +1,7 @@
 {% extends "portfolio/extender.html" %}
 
 {% block content %}
+{% load static %}
 
 <div id="index-banner" class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
@@ -9,7 +10,7 @@
     
             </div>
         </div>
-        <div class="parallax"><img src="/static/portfolio/images/classes.jpeg" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src=" {% static "portfolio/images/classes.jpeg" %}" alt="Unsplashed background img 1"></div>
     </div>
     
     
@@ -58,16 +59,16 @@
             <div class="slider">
             <ul class="slides">
                 <li>
-                <img src="/static/portfolio/images/courses_list.png"> <!-- random image -->
+                <img src="{% static "portfolio/images/courses_list.png" %}"> 
                 </li>
                 <li>
-                <img src="/static/portfolio/images/courses_view.png"> <!-- random image -->
+                <img src="{% static "portfolio/images/courses_view.png" %}"> 
                 </li>
                 <li>
-                <img src="/static/portfolio/images/courses_create.png"> <!-- random image -->
+                <img src="{% static "portfolio/images/courses_create.png" %}"> 
                 </li>
                 <li>
-                <img src="/static/portfolio/images/courses_edit.png"> <!-- random image -->
+                <img src="{% static "portfolio/images/courses_edit.png" %}">
                 </li>
             </ul>
             </div>
@@ -80,8 +81,8 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/static/portfolio/js/materialize.js"></script>
-    <script src="/static/portfolio/js/init.js"></script>
+    <script src="{% static "portfolio/js/materialize.js" %}"></script>
+    <script src="{% static "portfolio/js/init.js" %}"></script>
     <script>
             $(document).ready(function(){
           $('.slider').slider();

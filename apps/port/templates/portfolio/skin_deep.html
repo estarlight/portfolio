@@ -1,6 +1,7 @@
 {% extends "portfolio/extender.html" %}
 
 {% block content %}
+{% load static %}
 
 <div id="index-banner" class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
@@ -12,7 +13,7 @@
     
             </div>
         </div>
-        <div class="parallax"><img src="/static/portfolio/images/skindeep.jpg" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="{% static "portfolio/images/skindeep.jpg" %}" alt="Unsplashed background img 1"></div>
     </div>
     
     
@@ -104,8 +105,8 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/static/portfolio/js/materialize.js"></script>
-    <script src="/static/portfolio/js/init.js"></script>
+    <script src="{% static "portfolio/js/materialize.js" %}"></script>
+    <script src="{% static "portfolio/js/init.js" %}"></script>
     <script>
             $(document).ready(function(){
           $('.slider').slider();
